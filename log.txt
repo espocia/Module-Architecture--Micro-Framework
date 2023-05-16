@@ -1,3 +1,0 @@
-Port         Protocol Type              Board Name  FQBN            Core       
-/dev/ttyACM0 serial   Serial Port (USB) Arduino Uno arduino:avr:uno arduino:avr
-
