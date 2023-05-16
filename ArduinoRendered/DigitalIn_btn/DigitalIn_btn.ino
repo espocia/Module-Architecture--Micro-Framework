@@ -25,11 +25,7 @@ void setup() {
     
         
         
-        pinMode(8, OUTPUT);
-        
-        
-        
-        pinMode(9, OUTPUT);
+        pinMode(11, OUTPUT);
         
         
         
@@ -37,7 +33,11 @@ void setup() {
         
         
         
-        pinMode(11, OUTPUT);
+        pinMode(9, OUTPUT);
+        
+        
+        
+        pinMode(8, OUTPUT);
         
         
         
@@ -59,147 +59,16 @@ void loop() {
   
     
   
-    
-    
-      
-        
-        digitalWrite(8, true);
-        delay(50);
-      
-      
-        
-        digitalWrite(8, true);
-        delay(100);
-      
-      
-        
-        digitalWrite(8, true);
-        delay(200);
-      
-      
-    
-      
-        
-        digitalWrite(9, true);
-        delay(50);
-      
-      
-        
-        digitalWrite(9, true);
-        delay(100);
-      
-      
-        
-        digitalWrite(9, true);
-        delay(200);
-      
-      
-    
-      
-        
-        digitalWrite(10, true);
-        delay(50);
-      
-      
-        
-        digitalWrite(10, true);
-        delay(100);
-      
-      
-        
-        digitalWrite(10, true);
-        delay(200);
-      
-      
-    
-      
-        
-        digitalWrite(11, true);
-        delay(50);
-      
-      
-        
-        digitalWrite(11, true);
-        delay(100);
-      
-      
-        
-        digitalWrite(11, true);
-        delay(200);
-      
-      
-    
-    
-    
-      
-        
-        digitalWrite(8, false);
-        delay(50);
-      
-      
-        
-        digitalWrite(8, false);
-        delay(100);
-      
-      
-        
-        digitalWrite(8, false);
-        delay(200);
-      
-      
-    
-      
-        
-        digitalWrite(9, false);
-        delay(50);
-      
-      
-        
-        digitalWrite(9, false);
-        delay(100);
-      
-      
-        
-        digitalWrite(9, false);
-        delay(200);
-      
-      
-    
-      
-        
-        digitalWrite(10, false);
-        delay(50);
-      
-      
-        
-        digitalWrite(10, false);
-        delay(100);
-      
-      
-        
-        digitalWrite(10, false);
-        delay(200);
-      
-      
-    
-      
-        
-        digitalWrite(11, false);
-        delay(50);
-      
-      
-        
-        digitalWrite(11, false);
-        delay(100);
-      
-      
-        
-        digitalWrite(11, false);
-        delay(200);
-      
-      
-    
-    
+  
+    digitalWrite(11, true);
+  
+    digitalWrite(10, true);
+  
+    digitalWrite(9, true);
+  
+    digitalWrite(8, true);
+  
+  
   
   
  
@@ -210,13 +79,13 @@ void loop() {
   
     
   
-    digitalWrite(8, false);
-  
-    digitalWrite(9, false);
+    digitalWrite(11, false);
   
     digitalWrite(10, false);
   
-    digitalWrite(11, false);
+    digitalWrite(9, false);
+  
+    digitalWrite(8, false);
   
 
   
