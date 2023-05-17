@@ -1,9 +1,9 @@
 [build-system]
-requires = ["flit"]
-build-backend = "flit.buildapi"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
 [project]
-name = "Module Architecture Arduino"
+name = "module_architecture_arduino"
 version = "0.0.0-alpha"
 description = "A Python Based Micro-Framework of convient infacing with Arduino Boards"
 authors = [
