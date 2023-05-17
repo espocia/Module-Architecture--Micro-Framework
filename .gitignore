@@ -1,2 +1,4 @@
 venv/
+build/
+MAGS.egg-info/
 __pycache__/
