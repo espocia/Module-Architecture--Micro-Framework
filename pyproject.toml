@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[project]
+name = "Module Architecture Arduino"
+version = "0.0.0-alpha"
+description = "A Python Based Micro-Framework of convient infacing with Arduino Boards"
+authors = [
+  {name = "Joshua Jonelle G. Espocia", email = "joshuajonellegarbin.espocia@gmail.com"}
+]
+license = {file = "LICENSE"}
