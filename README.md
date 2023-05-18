@@ -92,7 +92,7 @@ To use the installed package, you can launch the Python interpreter and import t
 2. Launch the Python interpreter by typing `python` or `python3`, depending on your Python installation.
 3. In the Python interpreter, import the package using its name:
    ```python
-   import your_package_name
+   import MAGS.src
    
 ## Contributing
 
