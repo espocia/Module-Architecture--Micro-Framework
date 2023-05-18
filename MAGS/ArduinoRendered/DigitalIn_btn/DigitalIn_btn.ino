@@ -22,26 +22,10 @@ void setup() {
 
 
     
-    
-        
-        
-        pinMode(11, OUTPUT);
-        
-        
-        
-        pinMode(10, OUTPUT);
-        
-        
-        
-        pinMode(9, OUTPUT);
-        
-        
         
         pinMode(8, OUTPUT);
-        
-        
-        
-        
+    
+    
 
   
 }
@@ -57,37 +41,13 @@ void loop() {
   if (buttonState == HIGH) {
   
   
-    
-  
-  
-    digitalWrite(11, true);
-  
-    digitalWrite(10, true);
-  
-    digitalWrite(9, true);
-  
-    digitalWrite(8, true);
-  
-  
-  
-  
- 
+    digitalWrite(8, HIGH);    // Turn on the LED if the button is pressed
   
     
   } else {
     
   
-    
-  
-    digitalWrite(11, false);
-  
-    digitalWrite(10, false);
-  
-    digitalWrite(9, false);
-  
-    digitalWrite(8, false);
-  
-
+    digitalWrite(8, LOW);
   
     
   }

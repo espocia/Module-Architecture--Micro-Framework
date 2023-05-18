@@ -1,6 +1,7 @@
+import os
 # ----- Utilitily functions ----
-from file_system_loader import file_system_load
-from file_system_loader import save_sketch
+from .file_system_loader import file_system_load
+from .file_system_loader import save_sketch
 # ------------------------------
 
 
@@ -11,8 +12,10 @@ def chain(pin, delay):
     depending on the pins and delay
     initialization.
     """
-    directory = './ArduinoTemplate/DigitalOut/'
-    render_directory = './ArduinoRendered/DigitalOut_chain/DigitalOut_chain.ino'
+    directory = os.path.join(os.path.dirname(
+        __file__), './../ArduinoTemplate/DigitalOut/')
+    render_directory = os.path.join(os.path.dirname(
+        __file__), './../ArduinoRendered/DigitalOut_chain/DigitalOut_chain.ino')
     base = 'PINOUT.ino'
     parameters = {
         'led_pin': pin,
@@ -29,8 +32,10 @@ def cascade(pin, delay):
     Generates Cascading Digital
     Signal Patterns
     """
-    directory = './ArduinoTemplate/DigitalOut/'
-    render_directory = './ArduinoRendered/DigitalOut_cascade/DigitalOut_cascade.ino'
+    directory = os.path.join(os.path.dirname(
+        __file__), './../ArduinoTemplate/DigitalOut/')
+    render_directory = os.path.join(os.path.dirname(
+        __file__), './../ArduinoRendered/DigitalOut_cascade/DigitalOut_cascade.ino')
     base = 'PINOUTT_cacade.ino'
     parameters = {
         'led_pin': pin,
@@ -40,6 +45,3 @@ def cascade(pin, delay):
 
     return save_sketch(render_directory, output)
 # ------------------------------------
-
-
-chain([11, 10, 9], [100, 200, 500])
