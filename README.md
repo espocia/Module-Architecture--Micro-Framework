@@ -1,6 +1,6 @@
 # Module-Architecture Arduino Framework
 Micro Framework For Dynamic Sketch Generation for Arduino Micro-Controlllers
-# Dependency Installation for Windows
+
 
 These instructions will guide you through setting up the necessary dependencies, including Python, pip, Chocolatey, Arduino CLI, and Jinja2, on Windows.
 
@@ -9,7 +9,7 @@ These instructions will guide you through setting up the necessary dependencies,
 - Windows operating system.
 - PowerShell with administrative privileges.
 
-## Installation Steps
+# Dependency Installation for Windows
 
 1. Install Python and pip:
 
@@ -58,13 +58,42 @@ These instructions will guide you through setting up the necessary dependencies,
      python -c "import jinja2"
      ```
      You should see the respective version numbers and information displayed in the terminal without any errors.
+     
+## Installation Steps
+
+1. Download and unzip the repository:
+
+   - Click on the "Code" button and select "Download ZIP" to download the repository as a zip file.
+   - Extract the contents of the zip file to a directory of your choice.
+
+2. Open a PowerShell terminal:
+
+   - Open a PowerShell terminal with administrative privileges.
+
+3. Change to the directory of the unzipped repository:
+
+   - In the PowerShell terminal, navigate to the directory where you extracted the contents of the zip file:
+     ```powershell
+     cd path/to/your/repository
+     ```
+
+4. Install the package using pip:
+
+   - After the build process completes, run the following command to install the package using pip:
+     ```powershell
+     python -m pip install .
+     ```
 
 ## Usage
 
-- With the dependencies installed, you can now use Arduino CLI and Jinja2 in your projects.
-- Access the `ARDUINO_CLI` environment variable in your Python scripts using `os.environ.get('ARDUINO_CLI')`.
-- Utilize Jinja2 templates in your Python code to generate dynamic content.
+To use the installed package, you can launch the Python interpreter and import the package as follows:
 
+1. Open a terminal or command prompt.
+2. Launch the Python interpreter by typing `python` or `python3`, depending on your Python installation.
+3. In the Python interpreter, import the package using its name:
+   ```python
+   import your_package_name
+   
 ## Contributing
 
 Contributions are welcome! If you encounter any issues or have suggestions, please feel free to open an issue or submit a pull request in this repository.
