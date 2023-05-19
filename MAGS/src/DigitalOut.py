@@ -13,9 +13,9 @@ def chain(pin, delay):
     initialization.
     """
     directory = os.path.join(os.path.dirname(
-        __file__), './../ArduinoTemplate/DigitalOut/')
+        __file__), "..", "ArduinoTemplate", "DigitalOut")
     render_directory = os.path.join(os.path.dirname(
-        __file__), './../ArduinoRendered/DigitalOut_chain/DigitalOut_chain.ino')
+        __file__), "..", "ArduinoRendered", "DigitalOut_chain", "DigitalOut_chain.ino")
     base = 'PINOUT.ino'
     parameters = {
         'led_pin': pin,
@@ -33,9 +33,9 @@ def cascade(pin, delay):
     Signal Patterns
     """
     directory = os.path.join(os.path.dirname(
-        __file__), './../ArduinoTemplate/DigitalOut/')
+        __file__), "..", "ArduinoTemplate", "DigitalOut")
     render_directory = os.path.join(os.path.dirname(
-        __file__), './../ArduinoRendered/DigitalOut_cascade/DigitalOut_cascade.ino')
+        __file__), "..", "ArduinoRendered", "DigitalOut_cascade", "DigitalOut_cascade.ino")
     base = 'PINOUTT_cacade.ino'
     parameters = {
         'led_pin': pin,

@@ -12,9 +12,9 @@ def button(btn_pin, output_pin, delay=0):
     initialization.
     """
     directory = os.path.join(os.path.dirname(
-        __file__), './../ArduinoTemplate/DigitalOut/')
+        __file__), "..", "ArduinoTemplate", "DigitalOut")
     render_directory = os.path.join(os.path.dirname(
-        __file__), './../ArduinoRendered/DigitalIn_btn/DigitalIn_btn.ino')
+        __file__), "..", "ArduinoRendered", "DigitalIn_btn", "DigitalIn_btn.ino")
     base = 'PININ_btn.ino'
     parameters = {
         'led_pin': output_pin,
