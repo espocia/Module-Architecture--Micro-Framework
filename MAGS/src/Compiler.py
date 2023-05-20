@@ -1,12 +1,19 @@
 import os
+import platform
 import subprocess
 
 
 def compile(dir, fqbn, port):
 
     # Set the path to your arduino-cli binary
+    operating_system = platform.system()
 
-    ARDUINO_CLI = os.environ.get('ARDUINO_CLI')
+    if operating_system == 'Windows':
+        ARDUINO_CLI = os.path.join(os.path.dirname(
+            __file__), "windows-cli", "arduino-cli")
+    else:
+        ARDUINO_CLI = os.path.join(os.path.dirname(
+            __file__), "linux-cli", "arduino-cli")
 
     # Set the path to your sketch
     DIR = dir
