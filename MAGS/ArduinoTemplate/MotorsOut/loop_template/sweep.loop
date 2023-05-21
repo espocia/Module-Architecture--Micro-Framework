@@ -1,0 +1,27 @@
+// sweep looping (check if servo pin is iterables)
+{% block sweep %}
+  for (pos = 0; pos <= {{turn_angle}}; pos += 1) { // goes from 0 degrees to 180 degrees
+  
+  {% if servo_pin is iterable%}
+    {% for pin in servo_pin%}
+      myservo[{{loop.index -1}}].write(pos);              
+    {% endfor%}
+      delay(15);                      
+  {%else%}
+      myservo.write(pos);
+  {% endif %}
+    
+  }
+  
+  for (pos = {{turn_angle}}; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+  
+  {% if servo_pin is iterable%}
+    {% for pin in servo_pin%}
+      myservo[{{loop.index}}].write(pos);              
+    {% endfor%}
+      delay(15);                      
+  {%else%}
+      myservo.write(pos);
+  {% endif %}
+  }
+{% endblock %}
