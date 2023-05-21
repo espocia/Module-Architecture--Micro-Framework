@@ -16,7 +16,7 @@ void setup() {
 
     
         
-        pinMode(2, INPUT);
+        pinMode(7, INPUT);
     
     
 
@@ -25,11 +25,7 @@ void setup() {
     
         
         
-        pinMode(12, OUTPUT);
-        
-        
-        
-        pinMode(13, OUTPUT);
+        pinMode(10, OUTPUT);
         
         
         
@@ -39,40 +35,47 @@ void setup() {
 }
 
 void loop() {
-
+  
+  
 
   
-    buttonState = digitalRead(2);   // Read the state of the button
+    buttonState = digitalRead(7);   // Read the state of the button
   
 
 
   if (buttonState == HIGH) {
   
   
+
     
+        
+        
   
+    digitalWrite(10, HIGH);
+    delay(0);
+    digitalWrite(10, LOW);
+    delay(0);
   
-    digitalWrite(12, true);
-  
-    digitalWrite(13, true);
-  
-  
-  
-  
- 
-  
+
+        
+    
+    
+    
+
     
   } else {
     
   
     
+    
   
-    digitalWrite(12, false);
-  
-    digitalWrite(13, false);
+    digitalWrite(10, false);
   
 
+    
   
     
   }
+  
+  
 }

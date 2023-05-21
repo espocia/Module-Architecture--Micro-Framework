@@ -1,4 +1,3 @@
-
 {% set led_pin = led_pin %}
 {% set btn_pin = btn_pin %}
 {% set pattern = pattern %}
@@ -14,6 +13,6 @@ void setup() {
 
 void loop() {
   
-  {% include 'loop_tamplate/PININ_btn_loop.ino' %}
+  {% include 'loop_tamplate/PININ_btn_cascade.ino' %}
   
 }

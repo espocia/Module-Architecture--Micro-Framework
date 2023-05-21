@@ -6,7 +6,7 @@ from .file_system_loader import save_sketch
 
 
 # ----- Digital Ouput Sketch Simple patterns --------
-def chain(pin, delay):
+def chain(pin, delay=0):
     """
     Generates Dynamic Arduino Skecth
     depending on the pins and delay

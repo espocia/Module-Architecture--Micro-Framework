@@ -24,10 +24,6 @@ void setup(){
         
         
         
-        pinMode(12, OUTPUT);
-        
-        
-        
         
 
   
@@ -45,35 +41,28 @@ void loop(){
     
 
       digitalWrite(8, HIGH);
-      delay(2000);
+      delay(100);
 
     
   
     
 
       digitalWrite(9, HIGH);
-      delay(2000);
+      delay(100);
 
     
   
     
 
       digitalWrite(10, HIGH);
-      delay(2000);
+      delay(100);
 
     
   
     
 
       digitalWrite(11, HIGH);
-      delay(2000);
-
-    
-  
-    
-
-      digitalWrite(12, HIGH);
-      delay(2000);
+      delay(100);
 
     
   
@@ -82,35 +71,28 @@ void loop(){
     
 
       digitalWrite(8, LOW);
-      delay(2000);
+      delay(100);
 
     
   
     
 
       digitalWrite(9, LOW);
-      delay(2000);
+      delay(100);
 
     
   
     
 
       digitalWrite(10, LOW);
-      delay(2000);
+      delay(100);
 
     
   
     
 
       digitalWrite(11, LOW);
-      delay(2000);
-
-    
-  
-    
-
-      digitalWrite(12, LOW);
-      delay(2000);
+      delay(100);
 
     
   
